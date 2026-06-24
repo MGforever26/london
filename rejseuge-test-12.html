@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12. juli-test · London program</title>
+<style>
+:root{--ink:#1A2433;--muted:#6B7280;--line:#E5DDD2;--paper:#F5F0E8;--accent:#A06A2C}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink)}
+.testbar{position:sticky;top:0;z-index:50;background:rgba(245,240,232,.98);border-bottom:1px solid var(--line);padding:10px 12px;box-shadow:0 10px 24px rgba(26,36,51,.08)}
+.testbar h1{font-size:16px;margin:0 0 3px;letter-spacing:-.01em}.testbar p{margin:0;color:var(--muted);font-size:12.5px}.framewrap{height:calc(100vh - 78px);background:#fff}.framewrap iframe{width:100%;height:100%;border:0;display:block;background:#fff}@media(min-width:700px){.testbar{padding-left:18px;padding-right:18px}.framewrap{height:calc(100vh - 76px)}}
+</style>
+</head>
+<body>
+<div class="testbar">
+  <h1>Test: Søndag 12. juli</h1>
+  <p>Forventet: siden åbner på søndag, fredag og lørdag er dæmpede som gået, og søndag er markeret som I dag.</p>
+</div>
+<div class="framewrap"><iframe id="program" src="./index.html?v=travel-test-12-only"></iframe></div>
+<script>
+const dayMeta=[
+{id:'d10',label:'Fredag 10/7',date:'2026-07-10'},
+{id:'d11',label:'Lørdag 11/7',date:'2026-07-11'},
+{id:'d12',label:'Søndag 12/7',date:'2026-07-12'},
+{id:'d13',label:'Mandag 13/7',date:'2026-07-13'},
+{id:'d14',label:'Tirsdag 14/7',date:'2026-07-14'},
+{id:'d15',label:'Onsdag 15/7',date:'2026-07-15'},
+{id:'d16',label:'Torsdag 16/7',date:'2026-07-16'}];
+const simDate='2026-07-12';
+const iframe=document.getElementById('program');
+function cmp(a,b){return new Date(a+'T12:00:00')-new Date(b+'T12:00:00')}
+function idFromOverviewCard(card){const oc=card.getAttribute('onclick')||'';const m=oc.match(/show\('([^']+)'\)/);return m?m[1]:null}
+function addBadge(doc,card,text,cls){const line=card.querySelector('.badgeline')||card;const s=doc.createElement('span');s.className='travel-state '+(cls||'');s.textContent=text;line.appendChild(s)}
+function addRibbon(doc,id,text){const hero=doc.querySelector('#'+id+' .day-hero');if(!hero)return;const r=doc.createElement('div');r.className='travel-ribbon';r.textContent=text;hero.appendChild(r)}
+function apply(){
+ const doc=iframe.contentDocument, win=iframe.contentWindow; if(!doc||!win||!win.show) return;
+ const style=doc.createElement('style'); style.textContent=`
+ .overview-card.is-past{opacity:.50;filter:saturate(.55);background:#f8f5ef!important;}
+ .overview-card.is-today{outline:3px solid #A06A2C;box-shadow:0 0 0 6px rgba(160,106,44,.14),0 10px 26px rgba(26,36,51,.10)!important;background:#fffaf2!important;}
+ .nav button.today-nav{background:#A06A2C!important;color:#fff!important;border-color:#A06A2C!important;}
+ .nav button.past-nav{opacity:.55;}
+ .travel-state{display:inline-flex;align-items:center;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900;margin-left:6px;background:#f8ecd9;color:#A06A2C;}
+ .travel-state.past{background:#eee9df;color:#6B7280;}
+ .travel-ribbon{display:inline-flex;margin-top:10px;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;background:rgba(255,255,255,.20);color:#fff;border:1px solid rgba(255,255,255,.35);}`; doc.head.appendChild(style);
+ const today=dayMeta.find(d=>d.date===simDate);
+ doc.querySelectorAll('.overview-card').forEach(card=>{const id=idFromOverviewCard(card);const day=dayMeta.find(d=>d.id===id);if(!day)return;if(id===today.id){card.classList.add('is-today');addBadge(doc,card,'I dag','today')}else if(cmp(day.date,simDate)<0){card.classList.add('is-past');addBadge(doc,card,'Gået','past')}});
+ doc.querySelectorAll('.nav button').forEach(btn=>{const day=dayMeta.find(d=>d.id===btn.dataset.id);if(!day)return;if(day.id===today.id)btn.classList.add('today-nav');else if(cmp(day.date,simDate)<0)btn.classList.add('past-nav')});
+ addRibbon(doc,today.id,'I dag · '+today.label); win.show(today.id);
+}
+iframe.addEventListener('load',()=>setTimeout(apply,300));
+</script>
+</body>
+</html>
