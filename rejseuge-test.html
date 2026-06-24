@@ -20,13 +20,14 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans
   <div class="chips">
     <button data-mode="pre">Før rejsen</button>
     <button data-mode="d10">Fre 10/7</button>
+    <button data-mode="d12">Søn 12/7</button>
     <button data-mode="d13">Man 13/7</button>
     <button data-mode="d15">Ons 15/7</button>
     <button data-mode="post">Efter rejsen</button>
   </div>
   <div class="status" id="status">Indlæser testside…</div>
 </div>
-<div class="framewrap"><iframe id="program" src="./index.html?v=travel-test"></iframe></div>
+<div class="framewrap"><iframe id="program" src="./index.html?v=travel-test-12"></iframe></div>
 <script>
 const dayMeta = [
   {id:'d10', label:'Fredag 10/7', date:'2026-07-10'},
@@ -37,17 +38,18 @@ const dayMeta = [
   {id:'d15', label:'Onsdag 15/7', date:'2026-07-15'},
   {id:'d16', label:'Torsdag 16/7', date:'2026-07-16'}
 ];
-const simDates = {pre:'2026-07-09', d10:'2026-07-10', d13:'2026-07-13', d15:'2026-07-15', post:'2026-07-17'};
+const simDates = {pre:'2026-07-09', d10:'2026-07-10', d12:'2026-07-12', d13:'2026-07-13', d15:'2026-07-15', post:'2026-07-17'};
 const descriptions = {
-  pre:'Før rejsen: siden åbner på Overblik. Ingen dage dæmpes endnu.',
+  pre:'Før rejsen: siden åbner på Overblik. Ingen dage dæmpes. Ingen I dag-markering.',
   d10:'Fredag 10/7: siden åbner på fredag. Fredag markeres som I dag.',
+  d12:'Søndag 12/7: siden åbner på søndag. Fredag og lørdag dæmpes som overståede. Søndag markeres som I dag.',
   d13:'Mandag 13/7: siden åbner på mandag. Fredag–søndag dæmpes som overståede.',
   d15:'Onsdag 15/7: siden åbner på onsdag. Tidligere dage dæmpes, onsdag markeres som I dag.',
-  post:'Efter rejsen: siden åbner på Overblik, og alle rejsedage dæmpes som overståede.'
+  post:'Efter rejsen: siden åbner på Overblik igen. Ingen dæmpning. Ingen I dag-markering.'
 };
 const iframe = document.getElementById('program');
 const statusEl = document.getElementById('status');
-let currentMode = 'd13';
+let currentMode = 'd12';
 function cmp(a,b){ return new Date(a+'T12:00:00') - new Date(b+'T12:00:00'); }
 function injectStyles(doc){
   if(doc.getElementById('travel-test-style')) return;
@@ -98,7 +100,7 @@ function applyMode(mode){
   injectStyles(doc);
   resetMarkers(doc);
   const simDate = simDates[mode];
-  let today = dayMeta.find(d=>d.date===simDate);
+  const today = dayMeta.find(d=>d.date===simDate);
   const beforeTrip = cmp(simDate, dayMeta[0].date) < 0;
   const afterTrip = cmp(simDate, dayMeta[dayMeta.length-1].date) > 0;
   doc.querySelectorAll('.overview-card').forEach(card=>{
@@ -106,16 +108,14 @@ function applyMode(mode){
     const day = dayMeta.find(d=>d.id===id);
     if(!day) return;
     if(today && id === today.id){ card.classList.add('is-today'); addBadge(doc, card, 'I dag', 'today'); }
-    else if(!beforeTrip && cmp(day.date, simDate) < 0){ card.classList.add('is-past'); addBadge(doc, card, 'Gået', 'past'); }
-    else if(afterTrip){ card.classList.add('is-past'); addBadge(doc, card, 'Gået', 'past'); }
+    else if(!beforeTrip && !afterTrip && cmp(day.date, simDate) < 0){ card.classList.add('is-past'); addBadge(doc, card, 'Gået', 'past'); }
   });
   doc.querySelectorAll('.nav button').forEach(btn=>{
     const id = btn.dataset.id;
     const day = dayMeta.find(d=>d.id===id);
     if(!day) return;
     if(today && id===today.id) btn.classList.add('today-nav');
-    else if(!beforeTrip && cmp(day.date, simDate) < 0) btn.classList.add('past-nav');
-    else if(afterTrip) btn.classList.add('past-nav');
+    else if(!beforeTrip && !afterTrip && cmp(day.date, simDate) < 0) btn.classList.add('past-nav');
   });
   if(today){ addRibbon(doc, today.id, 'I dag · '+today.label); win.show(today.id); }
   else { win.show('overblik'); }
