@@ -100,7 +100,7 @@ window.LONDON_DATA = {
       title: "Sidste stop og hjemrejse",
       c: "d16",
       items: [
-        ["Formiddag", "Leadenhall Market, Tower Bridge-området eller sidste korte stop ved Themsen", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube. Leadenhall Market ligger relativt tæt på hotellet og kan kombineres med en sidste gåtur.", "Kun hvis der er tid og energi. Horizon 22 kan eventuelt bruges som backup torsdag formiddag, hvis vi booker en ekstra tid.", [["Kort", "map:Leadenhall Market London"], ["Horizon 22", "horizon"]]],
+        ["12.00", "Horizon 22 backup eller sidste stop ved Themsen", "Horizon 22 er booket som backup kl. 12.00, hvis onsdagstiden ikke bruges. Ellers kan formiddagen bruges tæt på hotellet omkring Leadenhall Market, Tower Bridge eller Themsen.", "Fra hotellet er der ca. 25 til 30 minutters gang til Horizon 22. Alternativt kort transport. Efter besøget retur mod hotel og bagage.", "Booket som backup. Ankomstvindue ca. 12.00-12.15. Aflys den tid, vi ikke bruger. Samme praktiske forhold som onsdag: billetter vises ved ankomst, sikkerhedstjek før Level 58 og ingen store tasker.", [["Horizon 22", "horizon"], ["Kort", "map:Horizon 22 22 Bishopsgate London"], ["Leadenhall Market", "map:Leadenhall Market London"]], "Booket"],
         ["Middag", "Frokost og afhentning af bagage", "Tæt på hotellet, London Bridge eller Borough Market.", "Hold det tæt på hotellet.", "Tjek om hotellet kan opbevare bagage efter check out.", [["Hotel", "map:Premier Inn London Tower Bridge"]]],
         ["Eftermiddag", "Afgang mod Gatwick", "Fly fra Gatwick kl. 19.05. Afgang fra hotellet omkring 15.30 til 16.00 giver god luft.", "Gå eller tag kort taxa til London Bridge. Tag Thameslink fra London Bridge til Gatwick Airport. Togturen tager typisk ca. 36 minutter, hurtigst ca. 29 minutter. Køb børnebilletter til begge børn, hvis I ikke har returbilletter i forvejen. De voksne bruger contactless/pay as you go.", "Regn med ca. 50 til 60 minutter fra hotel til Gatwick plus lufthavnstid. London Bridge er nærmeste store station og bruges til Gatwick.", [["Thameslink", "thames2"]]],
         ["Aften", "Hjemrejse", "Fly Gatwick 19.05 til København.", "Ankomst København om aftenen.", "Hold boarding og lufthavnstid enkelt. Ingen ekstra aktivitet efter ankomst til Gatwick."]
@@ -112,6 +112,7 @@ window.LONDON_DATA = {
     ["Harry Potter Studio Tour", "Mandag 13. juli kl. 16.30", "Booket", "hp"],
     ["Sky Garden", "Tirsdag 14. juli kl. 11.15", "Booket", "sky"],
     ["Horizon 22", "Onsdag 15. juli kl. 16.00. Ankomstvindue 16.00-16.15", "Booket. 2 voksne og 2 børn. Billetter i mail/Wallet. Husk sikkerhedstjek og ingen store tasker.", "horizon"],
+    ["Horizon 22 backup", "Torsdag 16. juli kl. 12.00. Ankomstvindue ca. 12.00-12.15", "Booket som backup. Aflys den tid, vi ikke bruger.", "horizon"],
     ["Wonderlab på Science Museum", "Tirsdag 14. juli eftermiddag, hvis vi vælger det i stedet for South Bank-ruten", "Valgfrit. Betalt billet. Book online på forhånd, hvis det vælges.", "wonder"],
     ["Changing the Guard", "Onsdag 15. juli ca. kl. 11.00", "Tjek kalender tættere på", "guard"],
     ["Tower of London", "Lørdag 11. juli ca. 10.00 eller 10.30", "Book på forhånd", "tower"]
