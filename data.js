@@ -89,7 +89,7 @@ window.LONDON_DATA = {
         ["Formiddag", "Changing the Guard ved Buckingham Palace", "Ceremonien ligger normalt omkring kl. 11.00, men kalenderen skal tjekkes tættere på.", "Gå til London Bridge. Tag Jubilee Line til Westminster. Gå via St James’s Park til Buckingham Palace.", "Afgang fra hotellet omkring 09.45 til 10.00.", [["Kalender", "guard"], ["Kort", "map:Buckingham Palace London"]]],
         ["Middag", "St James’s Park, Westminster og enkel frokost", "Big Ben og Westminster kan ses udefra uden at være en egentlig aktivitet.", "Gå fra Buckingham Palace gennem St James’s Park mod Westminster.", "Hold frokosten enkel.", [["Kort", "map:Westminster London Big Ben"]]],
         ["Eftermiddag", "Greenwich, kort version", "Greenwich er en roligere bydel ved floden med Greenwich Park, udsigt over London, National Maritime Museum og området ved Cutty Sark.", "Fra Westminster: tag Jubilee Line til London Bridge, og tag tog fra London Bridge til Greenwich. Alternativt retur mod Tower Hill og DLR fra Tower Gateway til Cutty Sark.", "Hold det som kort version, ikke fuldt museumsprogram.", [["Info", "greenwich"], ["Kort", "map:Cutty Sark Greenwich London"]]],
-        ["Sen eftermiddag", "Horizon 22", "Gratis udsigt fra 22 Bishopsgate.", "Tag Tube eller gå videre mod 22 Bishopsgate, afhængigt af hvor dagen ender.", "Skal bookes mandag 6. juli kl. 11.00 dansk tid. Gå efter kl. 15.30 eller 16.00.", [["Booking", "horizon"], ["Kort", "map:Horizon 22 22 Bishopsgate London"]], "Skal bookes"],
+        ["16.00", "Horizon 22", "Gratis udsigt fra 22 Bishopsgate. Booket til kl. 16.00.", "Tag Tube eller gå videre mod 22 Bishopsgate, afhængigt af hvor dagen ender.", "Booket. Ankomstvindue kl. 16.00-16.15. Alle fire har billetter. Billetterne skal vises ved ankomst. Der er sikkerhedstjek før Level 58. Tag ikke store tasker med; tasker over L58 x W45 x D25 cm er ikke tilladt, og der er ingen lockers.", [["Booking", "horizon"], ["Kort", "map:Horizon 22 22 Bishopsgate London"]], "Booket"],
         ["Aften", "VM semifinale 2 på pub", "Fleksibelt punkt.", "Retur fra Greenwich til London Bridge eller Tower Gateway. Pub tæt på hotellet.", "Hvis energien er der, kan det blive endnu en god kampaften."]
       ]
     },
@@ -100,7 +100,7 @@ window.LONDON_DATA = {
       title: "Sidste stop og hjemrejse",
       c: "d16",
       items: [
-        ["Formiddag", "Leadenhall Market, Tower Bridge-området eller sidste korte stop ved Themsen", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube. Leadenhall Market ligger relativt tæt på hotellet og kan kombineres med en sidste gåtur.", "Kun hvis der er tid og energi.", [["Kort", "map:Leadenhall Market London"]]],
+        ["Formiddag", "Leadenhall Market, Tower Bridge-området eller sidste korte stop ved Themsen", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube. Leadenhall Market ligger relativt tæt på hotellet og kan kombineres med en sidste gåtur.", "Kun hvis der er tid og energi. Horizon 22 kan eventuelt bruges som backup torsdag formiddag, hvis vi booker en ekstra tid.", [["Kort", "map:Leadenhall Market London"], ["Horizon 22", "horizon"]]],
         ["Middag", "Frokost og afhentning af bagage", "Tæt på hotellet, London Bridge eller Borough Market.", "Hold det tæt på hotellet.", "Tjek om hotellet kan opbevare bagage efter check out.", [["Hotel", "map:Premier Inn London Tower Bridge"]]],
         ["Eftermiddag", "Afgang mod Gatwick", "Fly fra Gatwick kl. 19.05. Afgang fra hotellet omkring 15.30 til 16.00 giver god luft.", "Gå eller tag kort taxa til London Bridge. Tag Thameslink fra London Bridge til Gatwick Airport. Togturen tager typisk ca. 36 minutter, hurtigst ca. 29 minutter. Køb børnebilletter til begge børn, hvis I ikke har returbilletter i forvejen. De voksne bruger contactless/pay as you go.", "Regn med ca. 50 til 60 minutter fra hotel til Gatwick plus lufthavnstid. London Bridge er nærmeste store station og bruges til Gatwick.", [["Thameslink", "thames2"]]],
         ["Aften", "Hjemrejse", "Fly Gatwick 19.05 til København.", "Ankomst København om aftenen.", "Hold boarding og lufthavnstid enkelt. Ingen ekstra aktivitet efter ankomst til Gatwick."]
@@ -111,8 +111,8 @@ window.LONDON_DATA = {
     ["Natural History Museum", "Søndag 12. juli kl. 12.00", "Booket", "nhm"],
     ["Harry Potter Studio Tour", "Mandag 13. juli kl. 16.30", "Booket", "hp"],
     ["Sky Garden", "Tirsdag 14. juli kl. 11.15", "Booket", "sky"],
+    ["Horizon 22", "Onsdag 15. juli kl. 16.00. Ankomstvindue 16.00-16.15", "Booket. 2 voksne og 2 børn. Billetter i mail/Wallet. Husk sikkerhedstjek og ingen store tasker.", "horizon"],
     ["Wonderlab på Science Museum", "Tirsdag 14. juli eftermiddag, hvis vi vælger det i stedet for South Bank-ruten", "Valgfrit. Betalt billet. Book online på forhånd, hvis det vælges.", "wonder"],
-    ["Horizon 22", "Onsdag 15. juli. Gå efter 15.30 eller 16.00", "Skal bookes mandag 6. juli kl. 11.00 dansk tid", "horizon"],
     ["Changing the Guard", "Onsdag 15. juli ca. kl. 11.00", "Tjek kalender tættere på", "guard"],
     ["Tower of London", "Lørdag 11. juli ca. 10.00 eller 10.30", "Book på forhånd", "tower"]
   ],
