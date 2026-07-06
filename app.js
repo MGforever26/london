@@ -64,6 +64,13 @@ function badge(s) {
   return s ? `<span class='badge ${s === 'Booket' ? 'booked' : 'todo'}'>${esc(s)}</span>` : '';
 }
 
+function infoBody(content) {
+  if (Array.isArray(content)) {
+    return `<ul class='info-list'>${content.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
+  }
+  return `<p>${esc(content)}</p>`;
+}
+
 function eventCard(it) {
   if (it[0] === 'Sportsnote') {
     return `<article class='event-card'><div class='event-head'><div><div class='time'>Sportsnote</div><h3>${esc(it[1])}</h3></div></div><p class='maintext'>${esc(sportsText(it[2]))}</p>${btns(it[5])}</article>`;
@@ -90,7 +97,7 @@ html += D.days.map(d => `<section id='${d.id}' class='section ${d.c}'><div class
 
 html += `<section id='bookinger' class='section'><h2 class='section-title'>Bookinger og tjekpunkter</h2><div class='list-stack'>${D.bookings.map(x => `<article class='list-card'><div><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p><p><b>Status:</b> ${esc(x[2])}</p></div><a href='${url(x[3])}' target='_blank' rel='noopener'>Link</a></article>`).join('')}</div></section>`;
 
-html += `<section id='praktisk' class='section'><h2 class='section-title'>Praktisk info</h2><div class='info-grid'>${D.practical.map(x => `<article class='info-card'><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p>${btns(x[2])}</article>`).join('')}</div></section>`;
+html += `<section id='praktisk' class='section'><h2 class='section-title'>Praktisk info</h2><div class='info-grid'>${D.practical.map(x => `<article class='info-card'><h3>${esc(x[0])}</h3>${infoBody(x[1])}${btns(x[2])}</article>`).join('')}</div></section>`;
 
 html += `<section id='alternativer' class='section'><h2 class='section-title'>Oplagte alternativer</h2><div class='list-stack'>${D.alternatives.map(x => `<article class='list-card'><div><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></div><div class='list-actions'><a href='${x[2]}' target='_blank' rel='noopener'>Info</a><a href='${url(x[3])}' target='_blank' rel='noopener'>Åbn kort</a></div></article>`).join('')}</div></section><div class='footer'>London program · mobilversion</div>`;
 
