@@ -37,12 +37,12 @@ function applyTransportFixes() {
   const gateCard = [
     'Sådan undgår vi gate-bøvl',
     [
-      'Én voksen har ansvar for den 10-årige ved gates. Brug den brede gate, når der er en. Den voksne tapper sit kort/telefon og går igennem sammen med den 10-årige.',
+      'Én voksen har ansvar for den 10-årige ved gates. Brug den brede gate, når der er en. Den voksne tapper sit eget kort/sin egen telefon og går igennem sammen med den 10-årige.',
       'Den 12-årige bruger sit eget Oyster og tapper selv ind og ud. Ingen andre bruger hans Oyster.',
-      'Hver voksen bruger samme kort eller samme telefon hele dagen. Bland ikke fysisk kort, iPhone og Apple Watch på samme rejse.',
-      'Hold betalingskort, Oyster og telefon adskilt ved læseren, så der ikke opstår card clash.',
+      'Hver voksen vælger ét fast betalingsmiddel: enten fysisk kort eller telefon/ur. Brug det samme betalingsmiddel hele dagen og især samme betalingsmiddel ind og ud på samme rejse.',
+      'Når man tapper, holder man kun det kort eller den telefon, der skal bruges, hen til den gule læser. Lad ikke en pung med flere kontaktløse kort eller Oyster ligge helt op ad læseren.',
       'På Tube, DLR, Overground, Elizabeth line og tog: tap ind og tap ud. På bus og tram: kun tap ind.',
-      'Hvis en gate driller, eller den 10-årige ikke kommer med igennem, så brug den brede gate eller spørg personalet ved gates. Lad være med at prøve at improvisere med flere kort på samme læser.'
+      'Hvis en gate driller, eller den 10-årige ikke kommer med igennem, så brug den brede gate eller spørg personalet ved gates. Prøv ikke at løse det ved at tappe med et andet kort, en anden telefon eller den 12-åriges Oyster.'
     ]
   ];
   const existingGate = by(D.practical, gateCard[0]);
