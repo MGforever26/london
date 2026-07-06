@@ -34,6 +34,25 @@ function applyTransportFixes() {
     p[2] = [['Oyster/top-up', 'tflOyster'], ['11-15-priser', 'tflChildFares']];
   }
 
+  const gateCard = [
+    'Sådan undgår vi gate-bøvl',
+    [
+      'Én voksen har ansvar for den 10-årige ved gates. Brug den brede gate, når der er en. Den voksne tapper sit kort/telefon og går igennem sammen med den 10-årige.',
+      'Den 12-årige bruger sit eget Oyster og tapper selv ind og ud. Ingen andre bruger hans Oyster.',
+      'Hver voksen bruger samme kort eller samme telefon hele dagen. Bland ikke fysisk kort, iPhone og Apple Watch på samme rejse.',
+      'Hold betalingskort, Oyster og telefon adskilt ved læseren, så der ikke opstår card clash.',
+      'På Tube, DLR, Overground, Elizabeth line og tog: tap ind og tap ud. På bus og tram: kun tap ind.',
+      'Hvis en gate driller, eller den 10-årige ikke kommer med igennem, så brug den brede gate eller spørg personalet ved gates. Lad være med at prøve at improvisere med flere kort på samme læser.'
+    ]
+  ];
+  const existingGate = by(D.practical, gateCard[0]);
+  if (existingGate) {
+    existingGate[1] = gateCard[1];
+  } else {
+    const i = D.practical.findIndex(x => x[0] === 'Offentlig transport');
+    D.practical.splice(i === -1 ? D.practical.length : i + 1, 0, gateCard);
+  }
+
   const fri = D.days.find(d => d.id === 'd10');
   if (fri) {
     const it = fri.items[0];
