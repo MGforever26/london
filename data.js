@@ -117,13 +117,10 @@ window.LONDON_DATA = {
     ["Tower of London", "Lørdag 11. juli ca. 10.00 eller 10.30", "Book på forhånd", "tower"]
   ],
   practical: [
-    ["Hotel", "Premier Inn London Tower Bridge. God base ved Tower Bridge, London Bridge, Themsen og Bermondsey."],
-    ["Nærmeste store station", "London Bridge. Bruges til Gatwick, Tube, tog mod Greenwich og adgang til resten af byen. Efter ankomst går vi til London Bridge Underground og køber et almindeligt Oyster til den 12-årige. Kortet koster £10.50. Personalet lægger Young Visitor discount på, og vi fylder ca. £10 på først. Første udgift bliver dermed ca. £20.50: £10.50 for kortet plus ca. £10 i rejsekredit. Zone 1-2 er fint til de almindelige London-ture.", [["Oyster/top-up", "tflOyster"]]],
-    ["Gatwick til hotel", "Tag Thameslink fra Gatwick Airport til London Bridge. Køb børnebilletter til begge børn i Gatwick. De voksne bruger contactless/pay as you go. Vi løser ikke Oyster til den 12-årige i Gatwick, fordi vi vil købe kortet og få Young Visitor discount lagt på i samme arbejdsgang ved London Bridge Underground. Uden rabatten ville den 12-årige rejse til voksenpris på Oyster/pay as you go. Rejsetiden er typisk ca. 36 minutter, hurtigst ca. 29 minutter. Derfra ca. 12 til 15 minutters gang eller kort taxa til hotellet.", [["Thameslink", "thames1"]]],
-    ["Hotel til Gatwick", "Gå eller tag kort taxa til London Bridge. Tag Thameslink fra London Bridge til Gatwick Airport. Køb børnebilletter til begge børn, hvis I ikke har returbilletter i forvejen. Ved hjemrejse: fly fra Gatwick kl. 19.05 og afgang fra hotellet omkring 15.30 til 16.00.", [["Thameslink", "thames2"]]],
     ["Offentlig transport", [
-      "Voksne bruger contactless/pay as you go. Vi regner med at bruge kort på telefonen. Hver voksen skal bruge den samme telefon/enhed hele dagen og især samme betalingsmiddel ind og ud på samme rejse.",
-      "Skift ikke mellem mobilkort, fysisk betalingskort og ur på samme rejse. Hvis man tapper ind med telefonen, skal man også tappe ud med telefonen.",
+      "Voksne bruger contactless/pay as you go. Vi regner med at bruge kort på telefonen. Hver voksen skal bruge sin egen telefon hele dagen og især samme telefon ind og ud på samme rejse.",
+      "Skift ikke mellem telefon og fysisk betalingskort på samme rejse. Hvis man tapper ind med telefonen, skal man også tappe ud med telefonen.",
+      "London Bridge er vores hovedstation. Ved ankomst køber vi et almindeligt Oyster til den 12-årige ved London Bridge Underground og får Young Visitor discount lagt på dér.",
       "Den 10-årige rejser gratis med betalende voksen på TfL-transport i London.",
       "Den 12-årige skal have et almindeligt Oyster uden foto. Det er ikke et Zip Oyster photocard, kræver ikke forudbestilling og kræver ikke pas/fotoansøgning.",
       "Vi køber ikke Oyster i Gatwick, fordi vi vil købe kortet og få Young Visitor discount lagt på i samme arbejdsgang ved London Bridge Underground. Uden rabatten ville den 12-årige rejse til voksenpris på Oyster/pay as you go.",
@@ -135,12 +132,13 @@ window.LONDON_DATA = {
       "Sammenligningen med ugekort skal læses sådan: Oyster-kortets £10.50 er en fast kortudgift. Derefter betaler vi kun faktisk rejseforbrug. Hvis vi i stedet vælger 7 Day Travelcard zone 1-2, skal det normalt lægges på et Oyster-kort, så kortudgiften på £10.50 kommer oven i Travelcard-prisen på £22.40. Samlet minimum bliver derfor ca. £32.90, før ekstra betaling/saldo til Gatwick og Watford/Harry Potter. Derfor kan ugekortet ikke betale sig i vores program."
     ], [["Oyster/top-up", "tflOyster"], ["11-15-priser", "tflChildFares"]]],
     ["Sådan undgår vi gate-bøvl", [
-      "Én voksen har ansvar for den 10-årige ved gates. Brug den brede gate, når der er en. Den voksne tapper sin egen telefon/sit eget kort og går igennem sammen med den 10-årige.",
+      "Én voksen har ansvar for den 10-årige ved gates. Brug den brede gate, når der er en. Den voksne tapper sin egen telefon og går igennem sammen med den 10-årige.",
       "Den 12-årige bruger sit eget Oyster og tapper selv ind og ud. Ingen andre bruger hans Oyster.",
       "Når man tapper, holder man kun den telefon eller det kort, der skal bruges, hen til den gule læser. Hold ikke en hel pung med flere kontaktløse kort eller Oyster op mod læseren.",
       "På Tube, DLR, Overground, Elizabeth line og tog: tap ind og tap ud. På bus og tram: kun tap ind.",
       "Hvis en gate driller, eller den 10-årige ikke kommer med igennem, så brug den brede gate eller spørg personalet ved gates. Prøv ikke at løse det ved at tappe med et andet kort, en anden telefon eller den 12-åriges Oyster."
     ]],
+    ["Hotel", "Premier Inn London Tower Bridge. God base ved Tower Bridge, London Bridge, Themsen og Bermondsey."],
     ["Apps", "Der er ikke behov for særlige apps til billettering. Google Maps eller Apple Maps er nok til de fleste ture. TfL Go kan bruges som supplement til ruteplanlægning og til at toppe Oyster op."]
   ],
   alternatives: [
