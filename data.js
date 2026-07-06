@@ -10,6 +10,7 @@ window.LONDON_DATA = {
     guard: "https://www.householddivision.org.uk/changing-the-guard-calendar",
     greenwich: "https://www.rmg.co.uk/plan-your-visit/tickets-prices",
     horizon: "https://horizon22.co.uk/book/",
+    leadenhall: "https://www.leadenhallmarket.co.uk/",
     thames1: "https://www.thameslinkrailway.com/journey/gatwick-airport-to-london-bridge",
     thames2: "https://www.thameslinkrailway.com/journey/london-bridge-to-gatwick-airport",
     bus15: "https://tfl.gov.uk/bus/route/15/",
@@ -100,7 +101,7 @@ window.LONDON_DATA = {
       title: "Sidste stop og hjemrejse",
       c: "d16",
       items: [
-        ["Formiddag", "Leadenhall Market, Tower Bridge-området eller sidste korte stop ved Themsen", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube. Leadenhall Market ligger relativt tæt på hotellet og kan kombineres med en sidste gåtur.", "Horizon 22 er booket som alternativ/backup kl. 12.00, hvis onsdagstiden ikke bruges. Det ligger ca. 25 til 30 minutters gang fra hotellet. Aflys den tid, vi ikke bruger. Samme praktiske forhold som onsdag: billetter vises ved ankomst, sikkerhedstjek før Level 58 og ingen store tasker.", [["Kort", "map:Leadenhall Market London"], ["Horizon 22", "horizon"], ["Horizon 22 kort", "map:Horizon 22 22 Bishopsgate London"]]],
+        ["Formiddag", "Leadenhall Market, Tower Bridge-området eller sidste korte stop ved Themsen", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube. Leadenhall Market ligger relativt tæt på hotellet og kan kombineres med en sidste gåtur.", "Horizon 22 er booket som alternativ/backup kl. 12.00, hvis onsdagstiden ikke bruges. Det ligger ca. 25 til 30 minutters gang fra hotellet. Aflys den tid, vi ikke bruger. Samme praktiske forhold som onsdag: billetter vises ved ankomst, sikkerhedstjek før Level 58 og ingen store tasker.", [["Info", "leadenhall"], ["Kort", "map:Leadenhall Market London"], ["Horizon 22", "horizon"], ["Horizon 22 kort", "map:Horizon 22 22 Bishopsgate London"]]],
         ["Middag", "Frokost og afhentning af bagage", "Tæt på hotellet, London Bridge eller Borough Market.", "Hold det tæt på hotellet.", "Tjek om hotellet kan opbevare bagage efter check out.", [["Hotel", "map:Premier Inn London Tower Bridge"]]],
         ["Eftermiddag", "Afgang mod Gatwick", "Fly fra Gatwick kl. 19.05. Afgang fra hotellet omkring 15.30 til 16.00 giver god luft.", "Gå eller tag kort taxa til London Bridge. Tag Thameslink fra London Bridge til Gatwick Airport. Togturen tager typisk ca. 36 minutter, hurtigst ca. 29 minutter. Køb børnebilletter til begge børn, hvis I ikke har returbilletter i forvejen. De voksne bruger contactless/pay as you go.", "Regn med ca. 50 til 60 minutter fra hotel til Gatwick plus lufthavnstid. London Bridge er nærmeste store station og bruges til Gatwick.", [["Thameslink", "thames2"]]],
         ["Aften", "Hjemrejse", "Fly Gatwick 19.05 til København.", "Ankomst København om aftenen.", "Hold boarding og lufthavnstid enkelt. Ingen ekstra aktivitet efter ankomst til Gatwick."]
