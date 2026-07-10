@@ -25,7 +25,7 @@ window.LONDON_DATA = {
       title: "Ankomst og rolig aftentur ved Themsen",
       c: "d10",
       items: [
-        ["Eftermiddag", "Ankomst til London", "Fly København 13.55 til Gatwick 14.55. Thameslink fra Gatwick Airport til London Bridge. Køb børnebilletter til begge børn i Gatwick. De voksne bruger contactless/pay as you go.", "Thameslink fra Gatwick Airport til London Bridge. Togturen tager typisk ca. 36 minutter, hurtigst ca. 29 minutter. Derfra ca. 12 til 15 minutters gang til hotellet. I Gatwick køber vi kun børnenes togbilletter, ikke Oyster til den 12-årige. Ved London Bridge Underground køber vi et almindeligt Oyster til den 12-årige, får Young Visitor discount lagt på af personalet og fylder ca. £10 på.", "Oyster-kortet koster £10.50. Det er kortpris, ikke saldo. Første udgift bliver derfor ca. £20.50: £10.50 for kortet plus ca. £10 i rejsekredit. Vi venter til London Bridge, fordi rabatten lægges på dér; uden rabatten ville den 12-årige rejse til voksenpris på Oyster/pay as you go.", [["Thameslink", "thames1"], ["Hotel", "map:Premier Inn London Tower Bridge"], ["Oyster", "tflOyster"]]],
+        ["Eftermiddag", "Ankomst til London", "Fly København 13.55 til Gatwick 14.55. Thameslink fra Gatwick Airport til London Bridge. Køb børnebilletter til begge børn i Gatwick. De voksne bruger contactless/pay as you go.", "Thameslink fra Gatwick Airport til London Bridge. Togturen tager typisk ca. 36 minutter, hurtigst ca. 29 minutter. Derfra ca. 12 til 15 minutters gang til hotellet. I Gatwick køber vi kun børnenes togbilletter, ikke Oyster til den 12-årige. Oyster købes lørdag formiddag ved London Bridge Underground, hvor Young Visitor discount lægges på af personalet.", "Oyster-kortet koster £10.50. Det er kortpris, ikke saldo. Vi køber kortet ved London Bridge, fordi rabatten lægges på dér; uden rabatten ville den 12-årige rejse til voksenpris på Oyster/pay as you go.", [["Thameslink", "thames1"], ["Hotel", "map:Premier Inn London Tower Bridge"], ["Oyster", "tflOyster"]]],
         ["Aften", "Rolig aftentur ved Tower Bridge", "Gå fra hotellet mod Tower Bridge, Themsen og eventuelt St Katharine Docks.", "Alt kan klares til fods fra hotellet.", "God første London-fornemmelse tæt på hotellet.", [["Kort", "map:Tower Bridge London"]]],
         ["Sportsnote", "Wimbledon: herresemifinaler", "Herresemifinalerne spilles fredag. Første semifinale starter kl. 14.30 dansk tid, og den anden følger efter. Kan ses på DR, hvis det passer med ankomst og aftensmad.", "Ingen transport. Følges på telefon, hotel-tv eller pub, hvis det passer ind.", "Kun som note, ikke som fast aktivitet."]
       ]
@@ -34,12 +34,13 @@ window.LONDON_DATA = {
       id: "d11",
       iso: "2026-07-11",
       date: "Lørdag 11. juli",
-      title: "Tower, Tower Bridge og South Bank",
+      title: "City of London, St Paul’s og South Bank",
       c: "d11",
       items: [
-        ["Formiddag", "Tower of London", "Tower of London ligger tæt på hotellet og fungerer bedst tidligt på dagen.", "Gå fra hotellet.", "Book på forhånd, gerne til ca. 10.00 eller 10.30. I travle perioder anbefales online booking på forhånd.", [["Billetter", "tower"], ["Kort", "map:Tower of London"]], "Skal bookes"],
-        ["Eftermiddag", "Tower Bridge, HMS Belfast udefra, Borough Market og South Bank", "Tower Bridge kan opleves ved at gå over den. HMS Belfast ses udefra. The Shard ses naturligt i området.", "Alt kan klares til fods.", "HMS Belfast giver mest mening udefra i dette program.", [["Kort", "map:Borough Market London"]]],
-        ["Aften", "Rolig middag tæt på hotellet", "Middag omkring Bermondsey Street, London Bridge eller Tower Bridge-området.", "Gåafstand fra hotellet.", "Hold aftenen let efter første hele dag."],
+        ["Formiddag", "Oyster og City of London", "Køb et almindeligt Oyster til den 12-årige ved London Bridge Underground og få Young Visitor discount lagt på. Gå derefter over London Bridge og fortsæt via City-dragerne, Monument, Leadenhall Market, Bank of England og Royal Exchange.", "Alt klares til fods.", "City-dragerne markerer indgangene til City of London.", [["Oyster", "tflOyster"], ["Leadenhall Market", "leadenhall"], ["Kort", "map:City of London Dragon London Bridge"]]],
+        ["Middag", "Bus 15, Temple Bar-dragen og St Paul’s", "Tag bus 15 fra Bank/Cannon Street mod Royal Courts of Justice. Se Temple Bar-dragen og gå tilbage ad Fleet Street til St Paul’s Cathedral.", "Bus 15 bruges som sightseeing og transport gennem City. Resten klares til fods.", "St Paul’s ses udefra.", [["TfL rute 15", "bus15"], ["Kort", "map:Temple Bar Dragon Royal Courts of Justice London"], ["St Paul’s", "map:St Pauls Cathedral London"]]],
+        ["Eftermiddag", "Millennium Bridge, Tate Modern og Borough Market", "Gå fra St Paul’s over Millennium Bridge. Fortsæt forbi Tate Modern og Shakespeare’s Globe til Borough Market.", "Alt klares til fods.", "Tate Modern er et valgfrit kort stop.", [["Tate Modern", "tate"], ["Kort", "map:Borough Market London"]]],
+        ["Aften", "Middag tæt på hotellet", "Middag omkring Bermondsey Street, London Bridge eller Tower Bridge-området.", "Gåafstand fra hotellet.", "Hold aftenen let efter første hele dag."],
         ["Sportsnote", "Wimbledon: damefinale", "Damefinalen spilles lørdag kl. 17.00 dansk tid. Kan ses på DR, hvis det passer efter dagens program.", "Ingen transport. Følges på telefon, hotel-tv eller pub, hvis det passer ind.", "Kun som note, ikke som fast aktivitet."]
       ]
     },
@@ -60,10 +61,10 @@ window.LONDON_DATA = {
       id: "d13",
       iso: "2026-07-13",
       date: "Mandag 13. juli",
-      title: "Bus 15 og Harry Potter",
+      title: "Harry Potter Studio Tour",
       c: "d13",
       items: [
-        ["Formiddag", "Billig sightseeing med bus 15", "Rute 15 kan bruges som billig sightseeing fra Tower Hill mod Trafalgar Square/Charing Cross.", "Gå eller tag kort transport til Tower Hill. Tag bus 15 mod Trafalgar Square/Charing Cross. Betaling: voksne bruger contactless/pay as you go, den 12-årige bruger Oyster, og den 10-årige rejser gratis med betalende voksen.", "Der er ikke garanti for dobbeltdekker på hver afgang, men øverste dæk er bedst, hvis bussen er dobbeltdekker.", [["TfL rute 15", "bus15"]]],
+        ["Formiddag", "Fri formiddag", "Hold formiddagen let før Harry Potter Studio Tour.", "Tæt på hotellet eller et kort stop i nærområdet.", "Ingen faste planer."],
         ["Tidlig eftermiddag", "Pause og let frokost", "Luft inden Harry Potter.", "Retur til hotellet eller området omkring London Bridge.", "Hold pausen reel, så Harry Potter ikke starter med stress."],
         ["16.30", "Harry Potter Studio Tour", "Warner Bros. Studio Tour. Allerede booket.", "Gå til London Bridge. Tag Northern Line til Euston. Tag tog til Watford Junction. Den 12-åriges Oyster med Young Visitor discount kan bruges Euston-Watford Junction, hvis der er saldo nok. Top eventuelt op ved automat på London Bridge eller Euston inden afgang. Tag shuttlebus til Warner Bros. Studio Tour.", "Afgang fra hotellet senest ca. 14.30. Ankomst tidligst kl. 16.10. Shuttlebus fra Watford Junction tager ca. 15 minutter og kører mindst hver halve time og er inkluderet i billetten. Digitale billetter klar på mobilen.", [["Transport", "hp"], ["Kort", "map:Warner Bros Studio Tour London"]], "Booket"]
       ]
@@ -72,11 +73,11 @@ window.LONDON_DATA = {
       id: "d14",
       iso: "2026-07-14",
       date: "Tirsdag 14. juli",
-      title: "Sky Garden, South Bank eller Wonderlab og VM-semifinale",
+      title: "Sky Garden, Wonderlab og VM-semifinale",
       c: "d14",
       items: [
         ["11.15", "Sky Garden", "Udsigt fra 20 Fenchurch Street.", "Gå fra hotellet eller tag kort transport til Monument.", "Booket. Adresse: 20 Fenchurch Street, London EC3M 8AF.", [["Booking", "sky"], ["Kort", "map:Sky Garden 20 Fenchurch Street London EC3M 8AF"]], "Booket"],
-        ["Eftermiddag", "South Bank-ruten eller Wonderlab på Science Museum", "Vælg efter energi: enten South Bank-ruten med Borough Market, Tate Modern og Millennium Bridge, eller 1-2 timer i Wonderlab på Science Museum.", "South Bank klares til fods fra Sky Garden/Tower Bridge-området. Wonderlab kræver tur til South Kensington.", "Science Museum har gratis adgang, men Wonderlab er en betalt interaktiv oplevelse med separat billet. Book Wonderlab online på forhånd, hvis det vælges; billetter på dagen kan ikke garanteres i travle perioder.", [["Tate Modern", "tate"], ["Wonderlab", "wonder"], ["Science Museum", "science"], ["Kort", "map:Science Museum London"]], "Skal bookes hvis valgt"],
+        ["Eftermiddag", "Wonderlab på Science Museum eller fri eftermiddag", "Vælg efter energi: 1-2 timer i Wonderlab på Science Museum eller en fri eftermiddag.", "Wonderlab kræver tur til South Kensington.", "Science Museum har gratis adgang, men Wonderlab er en betalt interaktiv oplevelse med separat billet. Book Wonderlab online på forhånd, hvis det vælges; billetter på dagen kan ikke garanteres i travle perioder.", [["Wonderlab", "wonder"], ["Science Museum", "science"], ["Kort", "map:Science Museum London"]], "Skal bookes hvis valgt"],
         ["Aften", "VM semifinale 1 på pub", "Gør det til aftensmad plus kamp.", "Gå til pub i London Bridge, Bermondsey eller Tower Bridge-området.", "Book bord, hvis muligt, især hvis England er med."]
       ]
     },
@@ -101,7 +102,7 @@ window.LONDON_DATA = {
       title: "Sidste stop og hjemrejse",
       c: "d16",
       items: [
-        ["Formiddag", "Leadenhall Market, Tower Bridge-området eller sidste korte stop ved Themsen", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube. Leadenhall Market ligger relativt tæt på hotellet og kan kombineres med en sidste gåtur.", "Horizon 22 er booket som alternativ/backup kl. 12.00, hvis onsdagstiden ikke bruges. Det ligger ca. 25 til 30 minutters gang fra hotellet. Aflys den tid, vi ikke bruger. Samme praktiske forhold som onsdag: billetter vises ved ankomst, sikkerhedstjek før Level 58 og ingen store tasker.", [["Info", "leadenhall"], ["Kort", "map:Leadenhall Market London"], ["Horizon 22", "horizon"], ["Horizon 22 kort", "map:Horizon 22 22 Bishopsgate London"]]],
+        ["Formiddag", "Sidste korte stop ved Themsen eller Horizon 22", "Hold formiddagen tæt på hotellet og uden faste billetter.", "Gå eller tag kort bus/Tube.", "Horizon 22 er booket som alternativ/backup kl. 12.00, hvis onsdagstiden ikke bruges. Det ligger ca. 25 til 30 minutters gang fra hotellet. Aflys den tid, vi ikke bruger. Samme praktiske forhold som onsdag: billetter vises ved ankomst, sikkerhedstjek før Level 58 og ingen store tasker.", [["Horizon 22", "horizon"], ["Horizon 22 kort", "map:Horizon 22 22 Bishopsgate London"]]],
         ["Middag", "Frokost og afhentning af bagage", "Tæt på hotellet, London Bridge eller Borough Market.", "Hold det tæt på hotellet.", "Tjek om hotellet kan opbevare bagage efter check out.", [["Hotel", "map:Premier Inn London Tower Bridge"]]],
         ["Eftermiddag", "Afgang mod Gatwick", "Fly fra Gatwick kl. 19.05. Afgang fra hotellet omkring 15.30 til 16.00 giver god luft.", "Gå eller tag kort taxa til London Bridge. Tag Thameslink fra London Bridge til Gatwick Airport. Togturen tager typisk ca. 36 minutter, hurtigst ca. 29 minutter. Køb børnebilletter til begge børn, hvis I ikke har returbilletter i forvejen. De voksne bruger contactless/pay as you go.", "Regn med ca. 50 til 60 minutter fra hotel til Gatwick plus lufthavnstid. London Bridge er nærmeste store station og bruges til Gatwick.", [["Thameslink", "thames2"]]],
         ["Aften", "Hjemrejse", "Fly Gatwick 19.05 til København.", "Ankomst København om aftenen.", "Hold boarding og lufthavnstid enkelt. Ingen ekstra aktivitet efter ankomst til Gatwick."]
@@ -114,18 +115,17 @@ window.LONDON_DATA = {
     ["Sky Garden", "Tirsdag 14. juli kl. 11.15", "Booket", "sky"],
     ["Horizon 22", "Onsdag 15. juli kl. 16.00. Ankomstvindue 16.00-16.15", "Booket. 2 voksne og 2 børn. Billetter i mail/Wallet. Husk sikkerhedstjek og ingen store tasker.", "horizon"],
     ["Horizon 22 backup", "Torsdag 16. juli kl. 12.00. Ankomstvindue ca. 12.00-12.15", "Booket som backup. Aflys den tid, vi ikke bruger.", "horizon"],
-    ["Wonderlab på Science Museum", "Tirsdag 14. juli eftermiddag, hvis vi vælger det i stedet for South Bank-ruten", "Valgfrit. Betalt billet. Book online på forhånd, hvis det vælges.", "wonder"],
-    ["Changing the Guard", "Onsdag 15. juli ca. kl. 11.00", "Tjek kalender tættere på", "guard"],
-    ["Tower of London", "Lørdag 11. juli ca. 10.00 eller 10.30", "Book på forhånd", "tower"]
+    ["Wonderlab på Science Museum", "Tirsdag 14. juli eftermiddag, hvis vi vælger det", "Valgfrit. Betalt billet. Book online på forhånd, hvis det vælges.", "wonder"],
+    ["Changing the Guard", "Onsdag 15. juli ca. kl. 11.00", "Tjek kalender tættere på", "guard"]
   ],
   practical: [
     ["Offentlig transport", [
       "Voksne bruger contactless/pay as you go. Vi regner med at bruge kort på telefonen. Hver voksen skal bruge sin egen telefon hele dagen og især samme telefon ind og ud på samme rejse.",
       "Skift ikke mellem telefon og fysisk betalingskort på samme rejse. Hvis man tapper ind med telefonen, skal man også tappe ud med telefonen.",
-      "London Bridge er vores hovedstation. Ved ankomst køber vi et almindeligt Oyster til den 12-årige ved London Bridge Underground og får Young Visitor discount lagt på dér.",
+      "London Bridge er vores hovedstation. Lørdag formiddag køber vi et almindeligt Oyster til den 12-årige ved London Bridge Underground og får Young Visitor discount lagt på dér.",
       "Den 10-årige rejser gratis med betalende voksen på TfL-transport i London.",
       "Den 12-årige skal have et almindeligt Oyster uden foto. Det er ikke et Zip Oyster photocard, kræver ikke forudbestilling og kræver ikke pas/fotoansøgning.",
-      "Vi køber ikke Oyster i Gatwick, fordi vi vil købe kortet og få Young Visitor discount lagt på i samme arbejdsgang ved London Bridge Underground. Uden rabatten ville den 12-årige rejse til voksenpris på Oyster/pay as you go.",
+      "Oyster købes ved London Bridge Underground, fordi vi vil købe kortet og få Young Visitor discount lagt på i samme arbejdsgang. Uden rabatten ville den 12-årige rejse til voksenpris på Oyster/pay as you go.",
       "Oyster-kortet koster £10.50. Det er kortpris, ikke saldo. Første udgift bliver ca. £20.50, hvis vi fylder £10 på fra start.",
       "Ved London Bridge Underground beder vi personalet lægge Young Visitor discount på kortet. Barnet skal være med. Rabatten giver 50 procent på voksen pay as you go og daglige lofter i op til 14 dage.",
       "Det er nemt at toppe op senere i TfL Go, ved Oyster Ticket Stops og ved billetautomater på Tube, London Overground og de fleste Elizabeth line- og National Rail-stationer.",
