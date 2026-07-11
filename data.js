@@ -61,12 +61,13 @@ window.LONDON_DATA = {
       id: "d13",
       iso: "2026-07-13",
       date: "Mandag 13. juli",
-      title: "Harry Potter Studio Tour",
+      title: "Soho, Chinatown og Harry Potter",
       c: "d13",
       items: [
-        ["Formiddag", "Fri formiddag", "Hold formiddagen let før Harry Potter Studio Tour.", "Tæt på hotellet eller et kort stop i nærområdet.", "Ingen faste planer."],
-        ["Tidlig eftermiddag", "Pause og let frokost", "Luft inden Harry Potter.", "Retur til hotellet eller området omkring London Bridge.", "Hold pausen reel, så Harry Potter ikke starter med stress."],
-        ["16.30", "Harry Potter Studio Tour", "Warner Bros. Studio Tour. Allerede booket.", "Gå til London Bridge. Tag Northern Line til Euston. Tag tog til Watford Junction. Den 12-åriges Oyster med Young Visitor discount kan bruges Euston-Watford Junction, hvis der er saldo nok. Top eventuelt op ved automat på London Bridge eller Euston inden afgang. Tag shuttlebus til Warner Bros. Studio Tour.", "Afgang fra hotellet senest ca. 14.30. Ankomst tidligst kl. 16.10. Shuttlebus fra Watford Junction tager ca. 15 minutter og kører mindst hver halve time og er inkluderet i billetten. Digitale billetter klar på mobilen.", [["Transport", "hp"], ["Kort", "map:Warner Bros Studio Tour London"]], "Booket"]
+        ["10.00", "Oxford Street, Soho og Chinatown", "Tag ind til Tottenham Court Road. Se et kort stykke af Oxford Street og gå videre gennem Soho, Carnaby Street og Chinatown.", "Gå til London Bridge og tag Northern Line til Tottenham Court Road. Resten klares til fods.", "Oxford Street er kun et kort stop. Soho og Chinatown er hovedoplevelsen.", [["Oxford Street", "map:Oxford Street Tottenham Court Road London"], ["Carnaby Street", "map:Carnaby Street London"], ["Chinatown", "map:Chinatown London"]]],
+        ["12.15", "Frokost i Chinatown", "Spis en ordentlig frokost inden turen til Harry Potter Studio Tour.", "Find et sted omkring Gerrard Street og regn med cirka en time.", "Afgang mod Euston senest omkring kl. 13.15.", [["Kort", "map:Gerrard Street Chinatown London"]]],
+        ["13.15", "Afgang mod Harry Potter", "Tag Northern Line fra Leicester Square til Euston. Tag derefter tog til Watford Junction og shuttlebussen til Warner Bros. Studio Tour.", "Målet er at være fremme omkring kl. 15.30, så der er god luft til tog, ventetid og shuttlebus.", "Vi må vente udenfor, indtil vi kan komme ind tidligst kl. 16.10.", [["Transport", "hp"], ["Leicester Square", "map:Leicester Square Underground Station London"], ["Euston", "map:London Euston Station"]]],
+        ["16.30", "Harry Potter Studio Tour", "Warner Bros. Studio Tour. Allerede booket.", "Den 12-åriges Oyster med Young Visitor discount kan bruges Euston-Watford Junction, hvis der er saldo nok. Top eventuelt op ved automat på Euston inden afgang. Shuttlebussen fra Watford Junction tager ca. 15 minutter og er inkluderet i billetten.", "Ankomst tidligst kl. 16.10. Digitale billetter klar på mobilen.", [["Transport", "hp"], ["Kort", "map:Warner Bros Studio Tour London"]], "Booket"]
       ]
     },
     {
