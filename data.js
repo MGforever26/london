@@ -53,7 +53,7 @@ window.LONDON_DATA = {
       items: [
         ["Formiddag", "South Kensington", "Museumsområdet med Natural History Museum, Science Museum og Victoria and Albert Museum tæt på hinanden.", "Gå til London Bridge. Tag Jubilee Line til Westminster. Skift til District Line eller Circle Line til South Kensington.", "Godt område at lande i før Natural History Museum.", [["Kort", "map:South Kensington station London"]]],
         ["12.00", "Natural History Museum", "Dagens hovedaktivitet.", "Gå fra South Kensington station til museet.", "Allerede booket.", [["Info", "nhm"], ["Kort", "map:Natural History Museum London"]], "Booket"],
-        ["Eftermiddag", "Kensington Gardens/Hyde Park", "Efter Natural History Museum giver det bedst mening med luft frem for mere museum.", "Kensington Gardens/Hyde Park ligger i gåafstand fra Natural History Museum.", "Hold eftermiddagen rolig. Wonderlab på Science Museum ligger i stedet som valgfrit punkt tirsdag eftermiddag.", [["Hyde Park", "map:Hyde Park London"], ["Kensington Gardens", "map:Kensington Gardens London"]]],
+        ["Eftermiddag", "Kensington Gardens/Hyde Park", "Efter Natural History Museum giver det bedst mening med luft frem for mere museum.", "Kensington Gardens/Hyde Park ligger i gåafstand fra Natural History Museum.", "Hold eftermiddagen rolig. Science Museum og Wonderlab er booket tirsdag.", [["Hyde Park", "map:Hyde Park London"], ["Kensington Gardens", "map:Kensington Gardens London"]]],
         ["Sportsnote", "Wimbledon: herrefinale", "Herrefinalen spilles søndag kl. 17.00 dansk tid. Kan ses på DR.", "Ingen transport. Følges på telefon, hotel-tv eller pub, hvis det passer ind.", "Mest oplagte Wimbledon-kamp at have i baghovedet."]
       ]
     },
@@ -74,11 +74,13 @@ window.LONDON_DATA = {
       id: "d14",
       iso: "2026-07-14",
       date: "Tirsdag 14. juli",
-      title: "Sky Garden, Wonderlab og VM-semifinale",
+      title: "Sky Garden, Science Museum og VM-semifinale",
       c: "d14",
       items: [
         ["11.15", "Sky Garden", "Udsigt fra 20 Fenchurch Street.", "Gå fra hotellet eller tag kort transport til Monument.", "Booket. Adresse: 20 Fenchurch Street, London EC3M 8AF.", [["Booking", "sky"], ["Kort", "map:Sky Garden 20 Fenchurch Street London EC3M 8AF"]], "Booket"],
-        ["Eftermiddag", "Wonderlab på Science Museum eller fri eftermiddag", "Vælg efter energi: 1-2 timer i Wonderlab på Science Museum eller en fri eftermiddag.", "Wonderlab kræver tur til South Kensington.", "Science Museum har gratis adgang, men Wonderlab er en betalt interaktiv oplevelse med separat billet. Book Wonderlab online på forhånd, hvis det vælges; billetter på dagen kan ikke garanteres i travle perioder.", [["Wonderlab", "wonder"], ["Science Museum", "science"], ["Kort", "map:Science Museum London"]], "Skal bookes hvis valgt"],
+        ["13.00", "Science Museum", "Gratis generel adgang er booket til kl. 13.00. Vi forventer først at ankomme omkring kl. 13.20.", "Fra Sky Garden: gå til Monument og tag District Line direkte til South Kensington. Følg skiltene mod museerne og gå til Science Museum.", "Det er fint at ankomme lidt efter kl. 13.00. Wonderlab ligger på niveau 3.", [["Science Museum", "science"], ["Kort", "map:Science Museum London"]], "Booket"],
+        ["13.30", "Wonderlab", "Interaktivt galleri med eksperimenter, matematik og naturvidenskab.", "Gå direkte til Wonderlab på niveau 3 efter indgangen til museet.", "Booket for alle fire. Adgangsvinduet er kl. 13.30-14.25; det er ikke en sluttid. Når vi først er inde, kan vi blive længere.", [["Wonderlab", "wonder"], ["Kort", "map:Wonderlab Science Museum London"]], "Booket"],
+        ["Efter Wonderlab", "Science Museums øvrige gallerier", "Fortsæt i de almindelige gratis udstillinger, når vi er færdige i Wonderlab.", "Ingen ny billet eller ny indgangstid er nødvendig.", "Prioritér efter energi og interesse.", [["Science Museum", "science"]]],
         ["Aften", "VM semifinale 1 på pub", "Gør det til aftensmad plus kamp.", "Gå til pub i London Bridge, Bermondsey eller Tower Bridge-området.", "Book bord, hvis muligt, især hvis England er med."]
       ]
     },
@@ -114,9 +116,10 @@ window.LONDON_DATA = {
     ["Natural History Museum", "Søndag 12. juli kl. 12.00", "Booket", "nhm"],
     ["Harry Potter Studio Tour", "Mandag 13. juli kl. 16.30", "Booket", "hp"],
     ["Sky Garden", "Tirsdag 14. juli kl. 11.15", "Booket", "sky"],
+    ["Science Museum", "Tirsdag 14. juli kl. 13.00", "Gratis generel adgang er booket. Forventet ankomst ca. 13.20.", "science"],
+    ["Wonderlab på Science Museum", "Tirsdag 14. juli kl. 13.30. Adgangsvindue 13.30-14.25", "Booket for 2 voksne og 2 børn. Adgangsvinduet er ikke sluttid.", "wonder"],
     ["Horizon 22", "Onsdag 15. juli kl. 16.00. Ankomstvindue 16.00-16.15", "Booket. 2 voksne og 2 børn. Billetter i mail/Wallet. Husk sikkerhedstjek og ingen store tasker.", "horizon"],
     ["Horizon 22 backup", "Torsdag 16. juli kl. 12.00. Ankomstvindue ca. 12.00-12.15", "Booket som backup. Aflys den tid, vi ikke bruger.", "horizon"],
-    ["Wonderlab på Science Museum", "Tirsdag 14. juli eftermiddag, hvis vi vælger det", "Valgfrit. Betalt billet. Book online på forhånd, hvis det vælges.", "wonder"],
     ["Changing the Guard", "Onsdag 15. juli ca. kl. 11.00", "Tjek kalender tættere på", "guard"]
   ],
   practical: [
