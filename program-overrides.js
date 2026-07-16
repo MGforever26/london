@@ -2,6 +2,18 @@ if (window.LONDON_DATA) {
   window.LONDON_DATA.links.hpTickets = "https://drive.google.com/file/d/1AYg1EyEpm8TqVj3ZaMMqHVFpR1FjIbRo/view?usp=drivesdk";
   window.LONDON_DATA.links.greenwich = "https://www.rmg.co.uk/royal-observatory";
 
+  const sunday = window.LONDON_DATA.days.find((day) => day.id === "d12");
+
+  if (sunday) {
+    sunday.title = "South Kensington, Natural History Museum, Royal Albert Hall og park";
+    sunday.items = [
+      ["Formiddag", "South Kensington", "Museumsområdet med Natural History Museum, Science Museum og Victoria and Albert Museum tæt på hinanden.", "Jubilee Line fra London Bridge til Westminster og videre med District Line eller Circle Line til South Kensington.", "Godt område at lande i før Natural History Museum.", [["Kort", "map:South Kensington station London"]]],
+      ["12.00", "Natural History Museum", "Dagens hovedaktivitet.", "Fra South Kensington station til museet til fods.", "Allerede booket.", [["Info", "nhm"], ["Kort", "map:Natural History Museum London"]], "Booket"],
+      ["Eftermiddag", "Royal Albert Hall og Kensington Gardens/Hyde Park", "Royal Albert Hall udefra og derefter videre til Kensington Gardens og Hyde Park.", "Til fods fra Natural History Museum via Royal Albert Hall til parken.", "Science Museum og Wonderlab er booket tirsdag.", [["Royal Albert Hall", "map:Royal Albert Hall London"], ["Hyde Park", "map:Hyde Park London"], ["Kensington Gardens", "map:Kensington Gardens London"]]],
+      ["Sportsnote", "Wimbledon: herrefinale", "Herrefinalen spilles søndag kl. 17.00 dansk tid. Kan ses på DR.", "Ingen transport. Følges på telefon, hotel-tv eller pub, hvis det passer ind.", "Mest oplagte Wimbledon-kamp at have i baghovedet."]
+    ];
+  }
+
   const monday = window.LONDON_DATA.days.find((day) => day.id === "d13");
   const studioTour = monday?.items.find((item) => item[1] === "Harry Potter Studio Tour");
 
@@ -26,10 +38,10 @@ if (window.LONDON_DATA) {
   const wednesday = window.LONDON_DATA.days.find((day) => day.id === "d15");
 
   if (wednesday) {
-    wednesday.title = "Buckingham Palace, St James’s Park, Westminster, Soho og King’s Cross";
+    wednesday.title = "Buckingham Palace, Westminster, Trafalgar Square, Soho og King’s Cross";
     wednesday.items = [
-      ["Formiddag", "Buckingham Palace og St James’s Park", "Buckingham Palace og gåtur gennem St James’s Park.", "Jubilee Line fra London Bridge til Green Park. Herfra til fods til paladset og videre gennem parken.", "Videre gennem Westminster-området.", [["Buckingham Palace", "map:Buckingham Palace London"], ["St James’s Park", "map:St James's Park London"]]],
-      ["Eftermiddag", "Westminster, Soho og King’s Cross", "Gåtur gennem Westminster-området og Soho med afslutning ved King’s Cross og St Pancras.", "Til fods og med Tube efter behov.", "King’s Cross som dagens sidste stop.", [["Westminster", "map:Westminster London"], ["Soho", "map:Soho London"], ["King’s Cross", "map:Kings Cross Station London"]]],
+      ["Formiddag", "Green Park, Buckingham Palace og St James’s Park", "Gåtur gennem Green Park til Buckingham Palace og videre gennem St James’s Park.", "Jubilee Line fra London Bridge til Green Park. Herfra til fods til paladset og videre gennem parkerne.", "Videre gennem Westminster-området.", [["Green Park", "map:Green Park London"], ["Buckingham Palace", "map:Buckingham Palace London"], ["St James’s Park", "map:St James's Park London"]]],
+      ["Eftermiddag", "Westminster, Trafalgar Square, Soho og King’s Cross", "Gåtur gennem Westminster-området og Trafalgar Square, videre gennem Soho og med afslutning ved King’s Cross og St Pancras.", "Til fods og med Tube efter behov.", "King’s Cross som dagens sidste stop.", [["Westminster", "map:Westminster London"], ["Trafalgar Square", "map:Trafalgar Square London"], ["Soho", "map:Soho London"], ["King’s Cross", "map:Kings Cross Station London"]]],
       ["Aften", "VM-semifinale 2 på hotellet", "England mod Argentina på hotellet.", "Ingen transport.", "Kampstart kl. 20.00 lokal tid."]
     ];
   }
