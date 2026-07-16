@@ -5,11 +5,12 @@ if (window.LONDON_DATA) {
   const sunday = window.LONDON_DATA.days.find((day) => day.id === "d12");
 
   if (sunday) {
-    sunday.title = "South Kensington, Natural History Museum, Royal Albert Hall og park";
+    sunday.title = "South Kensington, Natural History Museum, park og Paddington";
     sunday.items = [
       ["Formiddag", "South Kensington", "Museumsområdet med Natural History Museum, Science Museum og Victoria and Albert Museum tæt på hinanden.", "Jubilee Line fra London Bridge til Westminster og videre med District Line eller Circle Line til South Kensington.", "Godt område at lande i før Natural History Museum.", [["Kort", "map:South Kensington station London"]]],
       ["12.00", "Natural History Museum", "Dagens hovedaktivitet.", "Fra South Kensington station til museet til fods.", "Allerede booket.", [["Info", "nhm"], ["Kort", "map:Natural History Museum London"]], "Booket"],
       ["Eftermiddag", "Royal Albert Hall og Kensington Gardens/Hyde Park", "Royal Albert Hall udefra og derefter videre til Kensington Gardens og Hyde Park.", "Til fods fra Natural History Museum via Royal Albert Hall til parken.", "Science Museum og Wonderlab er booket tirsdag.", [["Royal Albert Hall", "map:Royal Albert Hall London"], ["Hyde Park", "map:Hyde Park London"], ["Kensington Gardens", "map:Kensington Gardens London"]]],
+      ["Sen eftermiddag", "Paddington Station og Paddington City", "Videre fra parken til Paddington Station og det nye byområde omkring stationen.", "Til fods fra Kensington Gardens/Hyde Park til Paddington.", "Dagens sidste stop før retur til hotellet.", [["Paddington Station", "map:Paddington Station London"], ["Paddington City", "map:Paddington Central London"]]],
       ["Sportsnote", "Wimbledon: herrefinale", "Herrefinalen spilles søndag kl. 17.00 dansk tid. Kan ses på DR.", "Ingen transport. Følges på telefon, hotel-tv eller pub, hvis det passer ind.", "Mest oplagte Wimbledon-kamp at have i baghovedet."]
     ];
   }
