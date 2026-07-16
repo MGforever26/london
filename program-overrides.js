@@ -18,7 +18,8 @@ if (window.LONDON_DATA) {
     wednesday.title = "Buckingham Palace, St James’s Park, Westminster, Soho og King’s Cross";
     wednesday.items = [
       ["Formiddag", "Buckingham Palace og St James’s Park", "Se Buckingham Palace og gå gennem St James’s Park.", "Gå til London Bridge og tag Jubilee Line til Green Park. Herfra går I til paladset og videre gennem parken.", "Dagen fortsatte spontant gennem Westminster-området.", [["Buckingham Palace", "map:Buckingham Palace London"], ["St James’s Park", "map:St James's Park London"]]],
-      ["Eftermiddag", "Westminster, Soho og King’s Cross", "Gå rundt i Westminster-området, fortsæt gennem Soho og slut ved King’s Cross og St Pancras.", "Resten af dagen klares til fods og med Tube efter behov.", "King’s Cross blev set som dagens sidste stop.", [["Westminster", "map:Westminster London"], ["Soho", "map:Soho London"], ["King’s Cross", "map:Kings Cross Station London"]]]
+      ["Eftermiddag", "Westminster, Soho og King’s Cross", "Gå rundt i Westminster-området, fortsæt gennem Soho og slut ved King’s Cross og St Pancras.", "Resten af dagen klares til fods og med Tube efter behov.", "King’s Cross blev set som dagens sidste stop.", [["Westminster", "map:Westminster London"], ["Soho", "map:Soho London"], ["King’s Cross", "map:Kings Cross Station London"]]],
+      ["Aften", "VM-semifinale 2 på hotellet", "Se England mod Argentina på hotellet.", "Ingen transport.", "Kampen begyndte kl. 20.00 lokal tid."]
     ];
   }
 
